@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yugal Varshney</title>
+  <link rel="icon" href="assets/photo.png">
+  <meta name="description"
+    content="Yugal Varshney — developer, student, and occasional artist. Portfolio of projects, code, and drawings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="nav">
+    <a href="#top" class="nav__mark">YV</a>
+    <div class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#code">Code</a>
+      <a href="#drawings">Drawings</a>
+      <a href="#connect">Connect</a>
+    </div>
+    <div class="nav__progress" id="navProgress" aria-hidden="true"></div>
+  </nav>
+
+  <!-- 01 HERO -->
+  <header id="top" class="hero">
+    <div class="hero__grid">
+      <div class="hero__inner">
+        <p class="hero__kicker"><span class="hero__kicker-text">printf("Yugal Varshney");</span><span
+            class="hero__cursor" aria-hidden="true"></span></p>
+        <h1 class="hero__title">
+          I <span class="hero__title-dynamic">build</span> things.<br>
+          Sometimes I draw<br>
+          them instead.
+        </h1>
+        <p class="hero__sub">2nd-year Integrated B.Tech + M.Tech student in Information Technology. Building things,
+          learning things, occasionally breaking things.</p>
+      </div>
+
+      <div class="hero__portrait">
+        <div class="portrait-frame">
+          <div class="portrait-img-wrap">
+            <!-- Drop your photo in assets/profile.jpg — it'll replace this placeholder automatically. -->
+            <img src="assets/photo.png" alt="Portrait of Yugal Varshney"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="portrait-placeholder">
+              <span>photo<br>coming soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      scroll
+    </div>
+  </header>
+
+  <!-- 02 ABOUT -->
+  <section class="about">
+    <div class="about__inner">
+      <p class="about__lead">
+        Hi, I'm Yugal.<br>I like building things, breaking them, figuring out
+        why they broke, and occasionally drawing instead of coding.
+      </p>
+      <p class="about__body">
+        <!-- Right now that means learning IT properly at college.
+        Learning deeper web development, data structures, and 
+        software engineering while building small projects and 
+        experimenting with new ideas. -->
+        <b>Currently:</b><br><br>
+        → Studying Information Technology<br>
+        → Building web projects<br>
+        → Exploring AI / ML<br>
+        → Participating in hackathons<br>
+        → Drawing when I need a break
+      </p>
+    </div>
+    <div class="about__image">
+      <img src="assets/study.png" alt="Yugal Varshney"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="about__image-placeholder">
+        <span>image<br>coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 SKILLS -->
+  <section class="skills">
+    <div class="skills__inner">
+      <h2 class="section-label">Things I build with</h2>
+      <div class="skills__grid">
+        <div class="skills__group">
+          <h3>Languages</h3>
+          <p>C · C++ · Python · JavaScript</p>
+        </div>
+        <div class="skills__group">
+          <h3>Frontend</h3>
+          <p>HTML · CSS · React</p>
+        </div>
+        <div class="skills__group">
+          <h3>Tools</h3>
+          <p>Git · GitHub</p>
+        </div>
+        <div class="skills__group">
+          <h3>Creative</h3>
+          <p>Sketching · Illustration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 PROJECTS -->
+  <section id="work" class="projects">
+    <div class="projects__intro">
+      <h2 class="section-label">Selected projects</h2>
+    </div>
+
+    <div class="projects__stack">
+      <article class="project" data-index="01">
+        <div class="project__content">
+          <div class="project__index">01 / 03</div>
+          <h3 class="project__title">Color Palette Generator</h3>
+          <p class="project__desc">
+            Generates and locks in color palettes in the browser — built to
+            explore color spaces and clean UI states with vanilla JavaScript.
+          </p>
+          <p class="project__tech">HTML · CSS · JavaScript</p>
+
+        </div>
+        <div class="project__visual" aria-hidden="true">
+          <div class="mockup-window">
+            <!-- <div class="mockup-bar">
+              <span class="mockup-dot dot--red"></span>
+              <span class="mockup-dot dot--yellow"></span>
+              <span class="mockup-dot dot--green"></span>
+              <span class="mockup-title">palette.app</span>
+            </div> -->
+            <div class="mockup-shot">
+              <img src="assets/color_palette_generator.png" alt="Color Palette Generator app screenshot" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-index="02">
+        <div class="project__content">
+          <div class="project__index">02 / 03</div>
+          <h3 class="project__title">Calculator</h3>
+          <p class="project__desc">
+            A clean keyboard-accessible calculator handling operator precedence,
+            decimal precision, and edge cases often skipped in basic builds.
+          </p>
+          <p class="project__tech">HTML · CSS · JavaScript</p>
+
+        </div>
+        <div class="project__visual" aria-hidden="true">
+          <div class="mockup-window">
+            <!-- <div class="mockup-bar">
+              <span class="mockup-dot dot--red"></span>
+              <span class="mockup-dot dot--yellow"></span>
+              <span class="mockup-dot dot--green"></span>
+              <span class="mockup-title">calculator.app</span>
+            </div> -->
+            <div class="mockup-shot">
+              <img src="assets/calculator.png" alt="Calculator app screenshot" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-index="03">
+        <div class="project__content">
+          <div class="project__index">03 / 03</div>
+          <h3 class="project__title">Quiz Game</h3>
+          <p class="project__desc">
+            A small quiz game I built to practice JavaScript logic, questions,
+            scoring, and DOM manipulation.
+          </p>
+          <p class="project__tech">HTML · CSS · JavaScript</p>
+
+        </div>
+        <div class="project__visual" aria-hidden="true">
+          <div class="mockup-window">
+            <div class="mockup-bar">
+              <!-- <span class="mockup-dot dot--red"></span>
+              <span class="mockup-dot dot--yellow"></span>
+              <span class="mockup-dot dot--green"></span>
+              <span class="mockup-title">quiz-game.app</span>
+            </div> -->
+            <div class="mockup-shot">
+              <img src="assets/quiz.png" alt="Quiz Game app screenshot" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 05 GITHUB -->
+  <section id="code" class="github">
+    <div class="github__inner">
+      <h2 class="section-label">From GitHub</h2>
+      <p class="github__sub">Pulled live from my repositories.</p>
+      <ul class="github__list" id="repoList">
+        <li class="github__loading">loading repositories…</li>
+      </ul>
+      <a class="github__all" href="https://github.com/Yugal-Varshney" target="_blank" rel="noopener">All repositories on
+        GitHub</a>
+    </div>
+  </section>
+
+  <!-- 06 DRAWINGS -->
+  <section id="drawings" class="drawings">
+    <div class="drawings__inner">
+      <h2 class="section-label">Beyond the code</h2>
+      <p class="drawings__lead">Not everything I make starts with a keyboard.</p>
+      <div class="drawings__gallery" id="drawingsGallery">
+        <div class="drawings__empty">
+          <p>Drawings are on the way — check back soon, or open the sketchbook yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 CONNECT -->
+  <footer id="connect" class="connect">
+    <div class="connect__inner">
+      <div class="connect__content">
+        <h2 class="connect__title">Let's talk.</h2>
+        <div class="connect__links">
+          <a href="https://github.com/Yugal-Varshney" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/yugal-varshney-285771384/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+        <p class="connect__foot">© 2026 Yugal Varshney</p>
+      </div>
+      <div class="connect__image">
+        <img src="assets/thanks.png" alt="Yugal Varshney"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="connect__image-placeholder">
+          <span>image<br>coming soon</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
