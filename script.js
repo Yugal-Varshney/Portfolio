@@ -115,7 +115,7 @@ loadRepos();
 // Drop image files into /assets/drawings/ and list their filenames here.
 // Once populated, the placeholder message is replaced automatically.
 const DRAWINGS = [
-  'sketch_01.jpeg',
+  'sketch_01.png',
   'sketch_02.png',
   'sketch_03.jpg',
   'sketch_04.jpg',
