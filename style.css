@@ -636,6 +636,43 @@ a {
   object-position: top center;
 }
 
+/* Mobile / tablet: big image on top, text below */
+@media (max-width: 860px) {
+  .projects__stack {
+    padding: 0 14px;
+    gap: 28px;
+  }
+
+  .project,
+  .project[data-index="01"],
+  .project[data-index="02"],
+  .project[data-index="03"] {
+    position: relative;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mockup-shot {
+    order: -1;
+    width: 100%;
+    aspect-ratio: auto;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mockup-shot img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .project__content {
+    padding: 22px 20px 26px;
+  }
+}
+
 /* Palette Preview */
 /* .preview-palette {
   display: grid;
